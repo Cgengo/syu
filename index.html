@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>しゅうの動画・語録検索</h1>
+    <form method="post" action="">
+        API_KEY入力<input name="inputapi" id="inputapi" type="text" size="30" maxlength="30">
+        <input name="Button1" type="submit" value="鍵登録">
+        キーワード入力<input name="input" id="input" type="text" size="30" maxlength="30">
+        <input name="Button2" type="submit" value="検索">
+    </form>
+    <div>
+      {% if items_output %}
+      <p>{{ items_output }}</p>
+      {% endif %}
+   </div>
+    <p>
+        {{ form_input }}
+    </p>
+</body>
+</html>
